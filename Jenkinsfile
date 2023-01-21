@@ -4,8 +4,10 @@ pipeline {
 
   stages {
     stage('Install') {
-      steps { sh 'npm install' }
-      steps {sh 'npm audit fix --force'}
+      steps { sh 'npm install'
+              sh 'npm audit fix --force'
+               }
+ 
     }
 
  
