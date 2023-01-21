@@ -4,7 +4,9 @@ pipeline {
 
   stages {
     stage('Install') {
-      steps { sh 'npm install'
+      steps { 
+        sh 'nvm use 18'
+        sh 'npm install'
               sh 'npm audit fix --force'
                }
  
